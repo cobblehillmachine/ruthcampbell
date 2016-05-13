@@ -56,9 +56,10 @@ p {margin:0 0 20px 0;}
 #home-boxes #contact-box {background:url(../images/home-contact.jpg) no-repeat 0 0;}
 
 /*ABOUT*/
+#about .grid-sizer {width: 40%;}
 #about .text {float:left; width:100%; font-size:18px; letter-spacing:1px;}
 #about .text p {float:left; width:455px; margin-bottom:30px;}
-#testimonial-cont {float:left; width:100%;}
+#testimonial-cont {float:left; width:100%; transform: translateX(13%); -webkit-transform: translateX(13%);}
 #testimonial-cont .testimonial {width:326px; text-align:center; color:#fff; margin:20px 0 0 0; float:left; display:block; height:auto;}
 #testimonial-cont .testimonial:nth-child(3n+1) {width:652px;}
 #testimonial-cont .testimonial:nth-child(4n+1) {background:#70c8b7;}

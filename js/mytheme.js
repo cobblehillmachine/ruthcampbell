@@ -2,10 +2,11 @@ $(window).load(function() {
 	var container = $('#testimonial-cont');
 	container.imagesLoaded( function(){
 	  container.masonry({ 	
-		itemSelector: '.testimonial',
-		  columnWidth: function( containerWidth ) {
+			itemSelector: '.testimonial',
+		  /* columnWidth: function( containerWidth ) {
 		    return containerWidth / 3;
-		  }
+		  } */
+		  columnWidth: '.grid-sizer'
 		});
 	});	
 	// 
