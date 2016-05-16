@@ -21,6 +21,8 @@ $(window).load(function() {
 	// });
 	GalleryCalculations();
 	
+
+ 	shuffleGallery();
 });
 
 $(document).ready(function() {
@@ -36,6 +38,23 @@ $(document).ready(function() {
 
 
 });
+
+
+
+/*
+* Shuffle Gallery images
+*/
+function shuffleGallery() {
+	var parent = $('.gallery-grid');
+	parent.fadeOut();
+	var divs = parent.children();
+	while (divs.length) {
+		parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+		console.log('here');
+	}
+	parent.fadeIn();
+}
+
 
 function GalleryCalculations() {
 	$('#gallery #container img').each(function(){ 
@@ -70,7 +89,7 @@ function GalleryCalculations() {
 			$(this).css({'width':newW, 'height':newH});
 		});
  
- 	});
+ 	}); 	
 }
 
 function GalleryHover() {

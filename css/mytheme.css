@@ -99,7 +99,10 @@ p {margin:0 0 20px 0;}
 /*#gallery #container a img {height:450px !important;}*/
 #gallery .wp-caption-text {background:#65b4a4; text-align:center; float:left; width:100%; margin-top:-38px; display:none; position:relative;}
 #gallery .wp-caption-text span {font:bold 12px "futura-pt"; color:#fff; display:inline-block; padding:10px 0 12px 0; text-transform:uppercase;}
-#gallery div.wp-caption {margin:0 6px 12px 6px; float:left;}
+#gallery div.wp-caption {margin:0 6px 12px 6px; /* float:left; */ display: inline-block;}
+
+#gallery .gallery-grid {text-align: center;}
+
 #gallery div.wp-caption .overlay {position:absolute; background:#70c8b7; opacity:.6; filter:alpha(opacity=60); display:none;}
 #gallery #imageData #bottomNavClose {float:none; position:absolute; top:-20px; margin-left:0; width:40px;}
 #gallery #numberDisplay {display:none !important;}
@@ -108,6 +111,16 @@ p {margin:0 0 20px 0;}
 #gallery #imageData #imageDetails {width:100%; text-align:center; padding:15px 0; position:relative; background:url(../images/lightbox-bg.png) repeat;}
 #gallery #imageData #caption {display:inline-block !important; text-transform:uppercase;}
 /*#gallery #lightbox {top:60px !important;}*/
+
+#gallery #jqlb_closelabel {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 10px;
+  left: -10px;
+  border-radius: 50%;
+}
+
 
 /*CONTACT*/
 #contact .headline {background-color:#dbe245; margin-bottom:25px; margin-top:0;}
