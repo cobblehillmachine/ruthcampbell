@@ -22,19 +22,6 @@
 	</div>
 	
 </div>
-<div class="content-title">rates</div>
-<div id="rates-cont">
-	<div class="info"><?php the_content(); ?></div>
-	<div class="rate-box">
-		<div class="price"><span class="dollar">$</span><span><?php echo get_post_meta($post->ID, 'Hourly Rate', true); ?></span></div>
-		<div class="title">hourly rate</div>
-	</div>
-	<div class="rate-box">
-		<div class="price"><span class="dollar">$</span><span><?php echo get_post_meta($post->ID, 'Daily Rate', true); ?></span></div>
-		<div class="title">daily rate</div>
-	</div>
-</div>
-
 
 
 <?php get_footer(); ?>
