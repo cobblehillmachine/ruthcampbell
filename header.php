@@ -91,6 +91,7 @@
 <body <?php body_class(); ?> id="<?php echo  strtolower(str_replace(' ','-',get_the_title())); ?>">
 
 		<div id="header">
+      <div class="mobile-toggle">&#x2261;</div>
 			<div class="mid-cont">
 				<a id="logo" href="/"></a>
 				<div id="nav">

@@ -36,9 +36,27 @@ $(document).ready(function() {
 	
 	//$('.gallery-grid a').fancybox();
 
-
+	$('.mobile-toggle').click(function() {
+    toggleMobileNav();
+  });
 });
 
+
+/*
+* Toggle Mobile Nav
+ */
+function toggleMobileNav() {
+  //console.log(menu);
+  $menu = $('#menu-rcd_menu');
+  if ($menu.hasClass('open')) {
+    $menu.slideUp();
+    $menu.removeClass('open');
+  }
+  else {
+    $menu.slideDown();
+    $menu.addClass('open');
+  }
+}
 
 
 /*
