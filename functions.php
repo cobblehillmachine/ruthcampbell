@@ -685,6 +685,16 @@ add_action('wp_head', 'diww_favicon');
 add_action('admin_head', 'diww_favicon');
 
 
+//// ENQUEUE CSS, LESS, & SCSS STYLESHEETS
+function add_style_sheets() {
+	if( !is_admin() ) {
+		wp_enqueue_style( 'reset', get_template_directory_uri().'/style.css', 'screen'  );
+		wp_enqueue_style( 'fancybox', get_template_directory_uri().'/css/jquery.fancybox.css', 'screen' );
+		wp_enqueue_style( 'main', get_template_directory_uri().'/css/style.less', 'screen' );
+	}
+}
+add_action('wp_enqueue_scripts', 'add_style_sheets');
+
 
 // custom post type
 

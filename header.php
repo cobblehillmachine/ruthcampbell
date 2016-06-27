@@ -60,7 +60,6 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/mytheme.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/jquery.fancybox.css" />
 <!-- <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" /> -->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -99,6 +98,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div id="main-wrap">
 			<div class="mid-cont">
 				<div id="container">
