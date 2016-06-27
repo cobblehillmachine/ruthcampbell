@@ -11,7 +11,7 @@ p {margin:0 0 20px 0;}
 #container {float:left; width:100%; border-top:2px solid #231f20; border-bottom:2px solid #231f20; padding:40px 0 35px 0;}
 #banner-img {float:left; width:100%; margin-bottom:35px;}
 #banner-img img {float:left; max-width:100%;}
-#banner-img #banner-title {position:absolute; text-align:right; font-weight: 500; font-size:34px; text-transform:uppercase; width:395px; right:160px; margin-top:475px; line-height:42px; letter-spacing:3px;}
+#banner-img #banner-title {position:absolute; text-align:right; font-weight: 500; font-size:34px; text-transform:uppercase; width:395px; right:10px; line-height:42px; letter-spacing:3px;}
 #banner-img #banner-title span {color:#909293;}
 .headline {float:left; width:100%; margin:40px 0; text-align:center; color:#fff; font-size:36px; background:#70c8b7; padding:52px 0 62px 0; text-transform:uppercase; font-weight:500; letter-spacing:3px;}
 .content-title {float:left; width:100%; text-align:center; color:#fff; text-transform:uppercase; padding:48px 0; font-weight:500; letter-spacing:3px; font-size:26px; background:#c9c9c9;}
