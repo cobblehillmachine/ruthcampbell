@@ -423,7 +423,8 @@ p {
 
 #services #services-cont #col-left {
   display: inline-block;
-  width: 49.7%;
+  width: 44.5%;
+  margin: 0 2.5%;
   vertical-align: top;
 
   @media @phone {
@@ -433,7 +434,8 @@ p {
 
 #services #services-cont #col-right {
   display: inline-block;
-  width: 49.7%;
+  width: 44.5%;
+  margin: 0 2.5%;
   vertical-align: top;
 
   @media @phone {
@@ -442,7 +444,6 @@ p {
 }
 
 #services #services-cont .service {
-  width:455px;
   padding:20px 15px;
 
   @media @phone {
@@ -524,6 +525,12 @@ p {
   margin-top: -38px;
   display: none;
   position: relative;
+  padding: 0;
+  margin-bottom: 0;
+
+  &:before {
+    content: none;
+  }
 }
 
 #gallery .wp-caption-text span {
@@ -541,7 +548,8 @@ p {
   padding: 0;
 
   img {
-    //padding: 0;
+    padding: 0;
+    max-width: 100%;
   }
 }
 
