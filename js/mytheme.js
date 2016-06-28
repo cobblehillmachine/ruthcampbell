@@ -96,13 +96,13 @@ function GalleryCalculations() {
 		});
 
 		$(this).siblings('.overlay').each(function() {
-			$(this).css({'width':newW, 'height':newH - 38, 'marginTop': - newH +'px'});
+			$(this).css({'width':newW + 1, 'height':newH - 37, 'marginTop': - newH - 1 +'px'});
 		});
 		$(this).parent('#gallery .wp-caption a').siblings('.wp-caption-text').each(function() {
 			var textH = $(this).height();
-			$(this).css({'width':newW});
+			$(this).css({'width':newW + 1});
 			if(textH > 40) {
-				//$(this).css({'marginTop':-74});
+				$(this).css({'marginTop':-17});
 			}
 		});
 		$(this).parent('#gallery .wp-caption a').parent('.wp-caption').each(function() {
