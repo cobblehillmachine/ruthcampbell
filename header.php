@@ -68,6 +68,7 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.masonry.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/mytheme.js"></script>
+<script src="https://use.fontawesome.com/83ea9d1ad0.js"></script>
 
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
@@ -93,7 +94,9 @@
 		<div id="header">
       <div class="mobile-toggle">&#x2261;</div>
 			<div class="mid-cont">
-				<a id="logo" href="/"></a>
+				<div id="logo">
+          <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo"></a>
+        </div>
 				<div id="nav">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				</div>
@@ -103,14 +106,14 @@
 		<div id="main-wrap">
 			<div class="mid-cont">
 				<div id="container">
+          <?php if(is_front_page()) { ?>
+            <?php while ( have_posts() ) : the_post(); ?>
+              <div id="banner-title"><?php the_content(); ?></div>
+            <?php endwhile; ?>
+          <?php } ?>
 				<?php if(is_front_page() || is_page(array('About', 'Services', 'Contact'))) { ?>
 					<div id="banner-img">
 						<?php the_post_thumbnail('full'); ?>
-							<?php if(is_front_page()) { ?>
-								<?php while ( have_posts() ) : the_post(); ?>
-									<div id="banner-title"><?php the_content(); ?></div>
-								<?php endwhile; ?>
-							<?php } ?>
 					</div>
 				<?php } ?>
 				<?php if(is_page(array('About', 'Services', 'Contact'))) { ?>

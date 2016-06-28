@@ -14,20 +14,23 @@
 		</div>
 		<div id="footer">
 			<div class="mid-cont">
-				<div id="copyright">&copy; <?php echo date("Y") ?> ruth campbell designs</div>
-				<div id="social-cont">
-					<a id="facebook" class="social-icon" target="_blank" href="https://www.facebook.com/pages/Ruth-Campbell-Interior-Styling/710966995595360"></a>
-					<a id="pinterest" class="social-icon" target="_blank" href="http://pinterest.com/ruthtcampbell/"></a>
-					<a id="twitter" class="social-icon" target="_blank" href="https://twitter.com/@RCintstylist"></a>
-					<a id="instagram" class="social-icon" target="_blank" href="http://instagram.com/rcintstyling/"></a>
+				<div class="table-row">
+          <div class="table-cell" id="copyright">&copy; <?php echo date("Y") ?> ruth campbell designs</div>
+          <div class="table-cell" id="social-cont">
+            <a id="facebook" class="social-icon" target="_blank" href="https://www.facebook.com/pages/Ruth-Campbell-Interior-Styling/710966995595360"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a id="pinterest" class="social-icon" target="_blank" href="http://pinterest.com/ruthtcampbell/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            <a id="twitter" class="social-icon" target="_blank" href="https://twitter.com/@RCintstylist"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a id="instagram" class="social-icon" target="_blank" href="http://instagram.com/rcintstyling/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+          <div class="tel table-cell"><span>O</span><a href="tel:843-412-5641">843-412-5641</a></div>
+          <div class="email-cont table-cell"><span>E</span><a class="email" href="mailto:ruth@ruthcampbelldesigns.com">ruth@ruthcampbelldesigns.com</a></div>
+        </div>
+				<div class="table-row">
+          <div class="table-cell" id="site-credit">site by <a href="http://cobblehilldigital.com" target="_blank">cobble hill</a></div>
 				</div>
-				<div id="info-cont">
-					<div class="tel"><span>O</span>&nbsp;<a href="tel:843-412-5641">843-412-5641</a></div>
-					<div class="email-cont"><span>E</span>&nbsp;<a class="email" href="mailto:ruth@ruthcampbelldesigns.com">ruth@ruthcampbelldesigns.com</a></div>	
-				</div>
-				<div id="site-credit">site by <a href="http://cobblehilldigital.com" target="_blank">cobble hill</a></div>
 			</div>
 		</div>
+
 		<script type="text/javascript">
 		(function() {
 		    window.PinIt = window.PinIt || { loaded:false };
