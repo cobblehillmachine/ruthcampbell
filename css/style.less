@@ -20,7 +20,7 @@ a {
 }
 
 a:hover, #header #nav .current-menu-item a, #form-cont input[type="submit"]:hover {
-  color:#909293 !important;
+  color: #909293;
 }
 
 a img {
@@ -631,14 +631,27 @@ p {
 }
 
 #contact-social .social-icon {
-  font-size: 30px;
+  font-size: 40px;
   margin: 0 3%;
   color: white;
+  transition: .2s all ease;
+
+  &:hover {
+    color: black;
+  }
 }
 
 #contact-info-cont {
   width: 100%;
   margin-bottom: 28px;
+  text-align: center;
+
+  > div:first-child {
+    margin-right: 1%;
+  }
+  > div:nth-child(2) {
+    margin-left: 1%;
+  }
 }
 
 #contact-info-cont .pink-box {
@@ -648,8 +661,10 @@ p {
   text-align: center;
   font-size: 22px;
   font-weight: bold;
-  width: 490px;
   height: 40px;
+  width: 48.6%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 #contact-info-cont .pink-box a {
