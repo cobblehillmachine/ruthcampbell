@@ -6,7 +6,7 @@ $(window).load(function() {
 		  /* columnWidth: function( containerWidth ) {
 		    return containerWidth / 3;
 		  } */
-		  columnWidth: '.grid-sizer'
+		  //columnWidth: '.grid-sizer'
 		});
 	});	
 	// 

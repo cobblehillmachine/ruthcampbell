@@ -331,6 +331,7 @@ p {
 #about .grid-sizer {
   width: 40%;
 }
+
 #about .text {
   width: 100%;
   font-size: 18px;
@@ -338,14 +339,14 @@ p {
 }
 
 #about .text p {
-  width: 455px;
+  width: 90%;
   margin-bottom: 30px;
 }
 
 #testimonial-cont {
   width: 100%;
-  transform: translateX(13%);
-  -webkit-transform: translateX(13%);
+  //transform: translateX(13%);
+  //-webkit-transform: translateX(13%);
 
   @media @phone {
     transform: translateX(5%);
@@ -354,10 +355,10 @@ p {
 }
 
 #testimonial-cont .testimonial {
-  width: 326px;
+  width: 40%;
   text-align: center;
   color: #fff;
-  margin: 20px 0 0 0;
+  margin: 20px 5% 0 5%;
   display: block;
   height: auto;
 
@@ -367,7 +368,7 @@ p {
 }
 
 #testimonial-cont .testimonial:nth-child(3n+1) {
-  width: 652px;
+  width: 90%;
 
   @media @phone {
     width: 90%;
@@ -384,25 +385,13 @@ p {
 #testimonial-cont .testimonial:nth-child(4n+4) .author, #gallery div.wp-caption:nth-child(4n+4) .wp-caption-text {background:#00678a;}
 
 #testimonial-cont .testimonial .info {
-  width:255px;
-  padding:40px 30px 30px 30px;
-  font-size:34px;
-  line-height:40px;
+  width: 80%;
+  margin: 15px auto;
+  font-size: 34px;
+  line-height: 40px;
 
-  @media @phone {
-    width: 90%;
-    font-size: 60px;
-    line-height: 65px;
-  }
 }
 
-#testimonial-cont .testimonial:nth-child(3n+1) .info {
-  width:580px;
-
-  @media @phone {
-    width: 90%;
-  }
-}
 
 #testimonial-cont .testimonial .author {
   width: 100%;
@@ -412,13 +401,13 @@ p {
 }
 
 #testimonial-cont .testimonial p, #services #services-cont .service p {
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 
 /*SERVICES*/
 #services .headline {
-  background-color:#00739a;
-  padding-bottom:35px;
+  background-color: #00739a;
+  padding-bottom: 35px;
 }
 
 #services .headline a {
@@ -427,7 +416,7 @@ p {
 }
 
 #services #services-cont {
-  width:100%;
+  width: 100%;
   margin-bottom:30px;
 }
 
