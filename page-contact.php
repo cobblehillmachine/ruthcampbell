@@ -3,10 +3,10 @@
 
 <div id="contact-social">
 	<div class="container">
-		<a id="contact-facebook" class="social-icon" target="_blank" href="https://www.facebook.com/pages/Ruth-Campbell-Interior-Styling/710966995595360"></a>
-		<a id="contact-pinterest" class="social-icon" target="_blank" href="http://pinterest.com/ruthtcampbell/"></a>
-		<a id="contact-twitter" class="social-icon" target="_blank" href="https://twitter.com/@RCintstylist"></a>
-		<a id="contact-instagram" class="social-icon" target="_blank" href="http://instagram.com/ruthtcampbell/"></a>
+		<a id="contact-facebook" class="social-icon" target="_blank" href="https://www.facebook.com/pages/Ruth-Campbell-Interior-Styling/710966995595360"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		<a id="contact-pinterest" class="social-icon" target="_blank" href="http://pinterest.com/ruthtcampbell/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+		<a id="contact-twitter" class="social-icon" target="_blank" href="https://twitter.com/@RCintstylist"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a id="contact-instagram" class="social-icon" target="_blank" href="http://instagram.com/ruthtcampbell/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 	</div>
 </div>
 <div id="contact-info-cont">

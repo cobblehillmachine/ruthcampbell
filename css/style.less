@@ -173,6 +173,7 @@ p {
 
 #header #nav li {
   margin-left: 30px;
+  display: inline-block;
 }
 
 #header ul {
@@ -421,8 +422,9 @@ p {
 }
 
 #services #services-cont #col-left {
-  width: 485px;
-  margin-right: 25px;
+  display: inline-block;
+  width: 49.7%;
+  vertical-align: top;
 
   @media @phone {
     width: 100%;
@@ -430,7 +432,9 @@ p {
 }
 
 #services #services-cont #col-right {
-  width: 485px;
+  display: inline-block;
+  width: 49.7%;
+  vertical-align: top;
 
   @media @phone {
     width: 100%;
@@ -533,6 +537,12 @@ p {
 #gallery div.wp-caption {
   margin: 0 6px 12px 6px;
   display: inline-block;
+  background-color: transparent;
+  padding: 0;
+
+  img {
+    //padding: 0;
+  }
 }
 
 #gallery .gallery-grid {
@@ -609,22 +619,14 @@ p {
 
 #contact-social .container {
   display: inline-block;
+  width: 100%;
 }
 
 #contact-social .social-icon {
-  background: url(../images/socials-contact.png) no-repeat;
-  width: 42px;
-  height: 42px;
-  margin-right: 35px;
+  font-size: 30px;
+  margin: 0 3%;
+  color: white;
 }
-
-#contact-social #contact-facebook:hover {background-position:0 -42px;}
-#contact-social #contact-pinterest {background-position:-110px 0;}
-#contact-social #contact-pinterest:hover {background-position:-110px -42px;}
-#contact-social #contact-twitter {background-position:-238px -0;}
-#contact-social #contact-twitter:hover {background-position:-238px -42px;}
-#contact-social #contact-instagram {background-position:-352px -0;}
-#contact-social #contact-instagram:hover {background-position:-352px -42px;}
 
 #contact-info-cont {
   width: 100%;
