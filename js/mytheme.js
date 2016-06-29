@@ -62,6 +62,10 @@ function shuffleGallery() {
 
 
 function GalleryCalculations() {
+  if ($(window).width() < 721) {
+    return;
+  }
+
 	$('#gallery #container img').each(function(){
  		
  		$(this).parent().attr('rel', 'lightbox[12]');

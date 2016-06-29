@@ -128,6 +128,10 @@ p {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 3px;
+
+  @media @phone {
+    font-size: 28px;
+  }
 }
 
 .content-title {
@@ -183,6 +187,7 @@ p {
     margin-right: 20px;
     z-index: 5;
     position: relative;
+    margin-top: 12px;
   }
 }
 
@@ -214,7 +219,7 @@ p {
   @media @phone {
     display: block;
     position: absolute;
-    top: 0;
+    top: -18px;
     right: -3%;
   }
 }
@@ -318,8 +323,8 @@ p {
 
   @media @phone {
     display: inline-block;
-    margin: 10px 2%;
-    width: 143px;
+    margin: 10px 0;
+    width: 141px;
     height: 200px;
   }
 }
@@ -668,7 +673,7 @@ p {
   margin-top: 0;
 
   @media @phone {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
@@ -763,6 +768,9 @@ p {
   @media @tablet {
     font-size: 18px;
   }
+  @media @phone {
+    font-size: 14px;
+  }
 }
 
 #form-cont {
@@ -846,6 +854,16 @@ form.wpcf7-form > div {
   background: #b5b5b5;
   padding: 14px 0 14px 25px;
   color: #fff;
+
+  @media @phone {
+    padding-left: 0;
+  }
+}
+
+#form-cont .checkbox-cont label, #form-cont .message-cont label {
+  @media @phone {
+    padding-left: 10px;
+  }
 }
 
 #form-cont .input-cont label {
@@ -866,9 +884,10 @@ span.wpcf7-form-control .wpcf7-checkbox {
 }
 
 #form-cont .checkbox-cont .wpcf7-checkbox .wpcf7-list-item {
-  width: 48%;
+  width: 47%;
   margin-top: 22px;
   display: inline-block;
+  vertical-align: top;
 }
 
 #form-cont .message-cont .textarea-250 ~ label {
