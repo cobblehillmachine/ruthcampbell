@@ -16,8 +16,10 @@ $(window).load(function() {
 $(document).ready(function() {
 	$('#header, #footer, #main-wrap').fadeIn('slow');
 	$('<div class="overlay" />').appendTo('#gallery .wp-caption a');
-	GalleryCalculations();
-	GalleryHover();
+
+	//GalleryCalculations();
+	//GalleryHover();
+
 	$('#gallery .wp-caption-text').each(function() {
 		$(this).wrapInner('<span></span>');
 	});
@@ -97,8 +99,10 @@ function GalleryCalculations() {
 		$(this).parent('#gallery .wp-caption a').parent('.wp-caption').each(function() {
 			$(this).css({'width':newW, 'height':newH});
 		});
- 
- 	}); 	
+
+ 	});
+  
+  GalleryHover();
 }
 
 function GalleryHover() {
