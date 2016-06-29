@@ -37,6 +37,7 @@ $(document).ready(function() {
 	//$('.gallery-grid a').fancybox();
 
 	$('.mobile-toggle').click(function() {
+    console.log('here');
     toggleMobileNav();
   });
 });
@@ -46,8 +47,8 @@ $(document).ready(function() {
 * Toggle Mobile Nav
  */
 function toggleMobileNav() {
-  //console.log(menu);
-  $menu = $('#menu-rcd_menu');
+  $menu = $('#nav');
+  console.log($menu);
   if ($menu.hasClass('open')) {
     $menu.slideUp();
     $menu.removeClass('open');

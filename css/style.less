@@ -1,3 +1,10 @@
+/*MEDIA QUERIES*/
+@tablet: ~"only screen and (max-width: 990px)";
+@phone: ~"only screen and (max-width: 720px)";
+
+@below-400: ~"only screen and (max-width: 720px)";
+
+
 body {
   margin: 0;
   padding: 0;
@@ -54,10 +61,6 @@ p {
   width: 90%;
   margin: 0 auto;
   max-width: 1600px;
-
-  @media @phone {
-    width: auto;
-  }
 }
 
 .table-row {
@@ -74,11 +77,6 @@ p {
   border-top: 2px solid #231f20;
   border-bottom: 2px solid #231f20;
   padding: 40px 0 35px 0;
-
-  @media @phone {
-    width: 90%;
-    margin: 0 auto;
-  }
 }
 
 #banner-img {
@@ -104,7 +102,13 @@ p {
   letter-spacing: 3px;
 
   @media @phone {
-    right: 55px;
+    right: 7px;
+    font-size: 23px;
+    line-height: 30px;
+    width: 75%;
+  }
+  @media @below-400 {
+    width: 90%;
   }
 }
 
@@ -137,11 +141,6 @@ p {
   background: #c9c9c9;
 }
 
-/*MEDIA QUERIES*/
-@tablet: ~"only screen and (max-width: 930px)";
-@phone: ~"only screen and (max-width: 630px)";
-
-
 
 /*FONTS*/
 .male {font-family: "reenie-beanie"; font-style: normal; font-weight: 500;}
@@ -159,6 +158,16 @@ p {
   width: 25%;
   margin: 0;
   vertical-align: middle;
+
+  img {
+    transition: .2s all ease;
+  }
+
+  &:hover {
+    img {
+      opacity: .3;
+    }
+  }
 }
 
 #header #nav {
@@ -168,31 +177,42 @@ p {
   vertical-align: middle;
 
   @media @phone {
-    margin-top: 205px;
-    margin-right: -100px;
-    margin-bottom: 30px;
+    display: none;
+    width: 100%;
+    margin-right: 20px;
   }
 }
 
 #header #nav li {
   margin-left: 30px;
   display: inline-block;
+
+  @media @phone {
+    display: block;
+  }
 }
 
 #header ul {
   @media @phone {
-    display: none;
     text-align: right;
   }
 }
 
 #header .mobile-toggle {
   display: none;
-  font-size: 32px;
-  margin-right: 20px;
+  font-size: 100px;
+  margin-right: 1%;
   margin-top: -50px;
+  z-index: 99;
+  &:hover {
+    cursor: pointer;
+  }
+
   @media @phone {
-    display: inline-block;
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
   }
 }
 
@@ -213,22 +233,22 @@ p {
   width: 100%;
 }
 
-#footer .table-cell {
-  vertical-align: middle;
-}
-
 #footer #copyright {
   width: 30%;
   text-transform: uppercase;
   font-size: 14px;
+
+  @media @tablet {
+    width: 100%;
+  }
 }
 
 #footer #social-cont {
   width: 20%;
   font-size: 22px;
 
-  @media @phone {
-    margin-left: 5%;
+  @media @tablet {
+    width: 100%;
   }
 }
 
@@ -273,6 +293,17 @@ p {
   }
 }
 
+#footer .table-cell {
+  vertical-align: middle;
+
+  @media @tablet {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
+  }
+}
+
 /*HOMEPAGE*/
 #home-boxes {
   width: 100%;
@@ -287,8 +318,8 @@ p {
 
   @media @phone {
     display: inline-block;
-    margin-right: 58px;
-    width: 35%;
+    width: 60%;
+    margin: 10px 2%;
   }
 }
 
@@ -300,8 +331,7 @@ p {
   background: url(../images/home-about.jpg) no-repeat 0 0;
 
   @media @phone {
-    background-position: 0 -200px;
-    margin-left: 15%;
+    background-position: 50% -200px;
   }
 }
 
@@ -309,7 +339,7 @@ p {
   background: url(../images/home-services.jpg) no-repeat 0 0;
 
   @media @phone {
-    background-position: 0 -200px;
+    background-position: 50% -200px;
   }
 }
 
@@ -317,8 +347,7 @@ p {
   background: url(../images/home-gallery.jpg) no-repeat 0 0;
 
   @media @phone {
-    background-position: 0 -200px;
-    margin-left: 15%;
+    background-position: 50% -200px;
   }
 }
 
@@ -326,7 +355,7 @@ p {
   background: url(../images/home-contact.jpg) no-repeat 0 0;
 
   @media @phone {
-    background-position: 0 -200px;
+    background-position: 50% -200px;
   }
 }
 
