@@ -3,24 +3,10 @@ $(window).load(function() {
 	container.imagesLoaded( function(){
 	  container.masonry({ 	
 			itemSelector: '.testimonial',
-		  /* columnWidth: function( containerWidth ) {
-		    return containerWidth / 3;
-		  } */
-		  //columnWidth: '.grid-sizer'
 		});
 	});	
-	// 
-	// var container = $('#gallery #container');
-	// container.imagesLoaded( function(){
-	//   container.masonry({ 	
-	// 	itemSelector: '#gallery #container .wp-caption',
-	// 	  columnWidth: function( containerWidth ) {
-	// 	    return containerWidth / 3;
-	// 	  }
-	// 	});
-	// });
+
 	GalleryCalculations();
-	
 
  	shuffleGallery();
 });
@@ -33,8 +19,6 @@ $(document).ready(function() {
 	$('#gallery .wp-caption-text').each(function() {
 		$(this).wrapInner('<span></span>');
 	});
-	
-	//$('.gallery-grid a').fancybox();
 
 	$('.mobile-toggle').click(function() {
     console.log('here');
@@ -76,9 +60,7 @@ function shuffleGallery() {
 
 
 function GalleryCalculations() {
-	$('#gallery #container img').each(function(){ 
-		//$(this).removeAttr('width')
- 		//$(this).removeAttr('height');
+	$('#gallery #container img').each(function(){
  		
  		$(this).parent().attr('rel', 'lightbox[12]');
  		
