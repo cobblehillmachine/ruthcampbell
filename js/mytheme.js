@@ -1,9 +1,11 @@
 $(window).load(function() {
 	var container = $('#testimonial-cont');
 	container.imagesLoaded( function(){
-	  container.masonry({ 	
-			itemSelector: '.testimonial',
-		});
+    if ($(window).width() > 720) {
+      container.masonry({
+        itemSelector: '.testimonial',
+      });
+    }
 	});	
 
 	GalleryCalculations();

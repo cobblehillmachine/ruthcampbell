@@ -29,6 +29,7 @@ a {
 
 a:hover, #header #nav .current-menu-item a, #form-cont input[type="submit"]:hover {
   color: #909293;
+  cursor: pointer;
 }
 
 a img {
@@ -211,7 +212,7 @@ p {
   @media @phone {
     display: block;
     position: absolute;
-    top: 55px;
+    top: 34px;
     right: 15px;
   }
 }
@@ -287,10 +288,6 @@ p {
   text-transform: uppercase;
   font-size: 14px;
   margin-top: 5px;
-
-  @media @phone {
-    margin-left: 5%;
-  }
 }
 
 #footer .table-cell {
@@ -390,7 +387,7 @@ p {
 
   @media @phone {
     width: 100%;
-    margin: 20px 0;
+    margin: 20px auto;
   }
 }
 
@@ -417,6 +414,9 @@ p {
   font-size: 34px;
   line-height: 40px;
 
+  @media @phone {
+    padding: 10px 0;
+  }
 }
 
 
@@ -870,25 +870,20 @@ div.wpcf7 img.ajax-loader {
 
 
 /*MAGAZINE COLUMN PLUGIN OVERRIDES */
-//#magazine-columns {
-//  @media @phone {
-//    margin: 0 auto !important;
-//    overflow: auto !important;
-//
-//    .column  {
-//      float: none !important;
-//    }
-//
-//    .column.c2 {
-//      width: 90% !important;
-//      margin: 0 auto !important;
-//      font-size: 30px !important;
-//
-//      p {
-//        float: none !important;
-//        width: auto !important;
-//        font-size: 30px !important;
-//      }
-//    }
-//  }
-//}
+#magazine-columns {
+  @media @phone {
+    margin: 0 auto !important;
+    overflow: auto !important;
+
+    .column.c2 {
+      width: 100% !important;
+      margin: 0 auto !important;
+      font-size: 22px !important;
+
+      p {
+        width: auto !important;
+        font-size: 22px !important;
+      }
+    }
+  }
+}
