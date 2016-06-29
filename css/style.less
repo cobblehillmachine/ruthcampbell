@@ -17,6 +17,7 @@ a {
   text-decoration: none;
   color: #231f20;
   outline: 0;
+  transition: .2s all ease;
 }
 
 a:hover, #header #nav .current-menu-item a, #form-cont input[type="submit"]:hover {
@@ -44,6 +45,8 @@ p {
 #header, #footer, #main-wrap {
   width: 100%;
   display: none;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .mid-cont {
@@ -689,23 +692,33 @@ p {
 
 #form-cont .input-cont {
   color: #fff;
-  width: 31.7%;
+  width: 31.6%;
   display: inline-block;
 }
 
-form.wpcf7-form {
+#form-cont .wrapper {
+  text-align: center;
+}
+
+form.wpcf7-form > div {
+  > div:nth-child(1) {
+    margin-right: 1%;
+  }
+
   > div:nth-child(2) {
+    margin-left: 1%;
     margin-right: 1%;
   }
 
   > div:nth-child(3) {
     margin-left: 1%;
-    margin-right: 1%;
   }
+}
 
-  > div:nth-child(4) {
-    margin-left: 1%;
-  }
+.message-cont .wpcf7-form-control-wrap, .input-cont .wpcf7-form-control-wrap {
+  position: static;
+  display: block;
+  width: 100%;
 }
 
 #form-cont .input-cont:nth-child(4n) {
@@ -714,17 +727,18 @@ form.wpcf7-form {
 
 #form-cont .input-cont input[type="text"], #form-cont .input-cont input[type="email"], #form-cont .message-cont textarea {
   border: none;
-  padding: 15px 15px 15px 25px;
+  padding: 23.5px 5%;
   background: #c9c9c9;
   height: 17px;
   font: bold 13px "futura-pt";
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
+  box-sizing: border-box;
 }
 
 #form-cont .input-cont input[type="text"], #form-cont .input-cont input[type="email"] {
-  width: 88%;
+  width: 100%;
 }
 
 #form-cont .message-cont, #form-cont .checkbox-cont {
@@ -734,7 +748,7 @@ form.wpcf7-form {
 
 #form-cont .message-cont textarea {
   resize: none;
-  width: 96.2%;
+  width: 100%;
   margin: 0;
   height: 230px;
 }
@@ -746,13 +760,15 @@ form.wpcf7-form {
 }
 
 #form-cont .input-cont label {
-  width: 92.1%;
+  width: 100%;
   display: block;
+  box-sizing: border-box;
 }
 
 #form-cont .message-cont label, #form-cont .checkbox-cont label {
-  width: 97.5%;
+  width: 100%;
   display: block;
+  box-sizing: border-box;
 }
 
 span.wpcf7-form-control .wpcf7-checkbox {
@@ -767,15 +783,12 @@ span.wpcf7-form-control .wpcf7-checkbox {
 }
 
 #form-cont .message-cont .textarea-250 ~ label {
-  width: 97.5%;
-  display: block;
   margin-top: -6px;
 }
 
 #form-cont .submit-btn {
-  width: 134px;
   margin-top: 20px;
-  text-align: center;
+  text-align: right;
 }
 
 #form-cont input[type="submit"] {
@@ -786,6 +799,11 @@ span.wpcf7-form-control .wpcf7-checkbox {
   padding: 20px 22px 18px 25px;
   letter-spacing: 2px;
   cursor: pointer;
+  transition: .2s all ease;
+}
+
+div.wpcf7 img.ajax-loader {
+  margin-right: -20px;
 }
 
 #form-cont .wpcf7-not-valid-tip {
