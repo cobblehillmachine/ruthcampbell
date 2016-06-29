@@ -11,7 +11,7 @@
 </div>
 <div id="contact-info-cont">
 	<div class="phone-cont pink-box">
-		843-412-5641
+		<a href="tel:843-412-5641">843-412-5641</a>
 	</div>
 	<div class="email-cont pink-box">
 		<a href="mailto:ruth@ruthcampbelldesigns.com" target="_blank">ruth@ruthcampbelldesigns.com</a>

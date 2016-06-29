@@ -181,6 +181,8 @@ p {
     display: none;
     width: 100%;
     margin-right: 20px;
+    z-index: 5;
+    position: relative;
   }
 }
 
@@ -204,7 +206,7 @@ p {
   font-size: 100px;
   margin-right: 1%;
   margin-top: -50px;
-  z-index: 99;
+  z-index: 4;
   &:hover {
     cursor: pointer;
   }
@@ -212,8 +214,8 @@ p {
   @media @phone {
     display: block;
     position: absolute;
-    top: 34px;
-    right: 15px;
+    top: 0;
+    right: -3%;
   }
 }
 
@@ -298,6 +300,7 @@ p {
     width: 100%;
     text-align: center;
     padding: 4px 0;
+    font-size: 16px;
   }
 }
 
@@ -315,8 +318,9 @@ p {
 
   @media @phone {
     display: inline-block;
-    width: 60%;
     margin: 10px 2%;
+    width: 143px;
+    height: 200px;
   }
 }
 
@@ -329,6 +333,10 @@ p {
 
   @media @phone {
     background-position: 50% -200px;
+
+    &:hover {
+      background-position: 50% -200px !important;
+    }
   }
 }
 
@@ -336,7 +344,11 @@ p {
   background: url(../images/home-services.jpg) no-repeat 0 0;
 
   @media @phone {
-    background-position: 50% -200px;
+    background-position: 45% -200px;
+
+    &:hover {
+      background-position: 45% -200px !important;
+    }
   }
 }
 
@@ -345,6 +357,10 @@ p {
 
   @media @phone {
     background-position: 50% -200px;
+
+    &:hover {
+      background-position: 50% -200px !important;
+    }
   }
 }
 
@@ -353,6 +369,10 @@ p {
 
   @media @phone {
     background-position: 50% -200px;
+
+    &:hover {
+      background-position: 50% -200px !important;
+    }
   }
 }
 
@@ -435,6 +455,10 @@ p {
 #services .headline {
   background-color: #00739a;
   padding-bottom: 35px;
+
+  @media @phone {
+    font-size: 24px;
+  }
 }
 
 #services .headline a {
@@ -450,7 +474,6 @@ p {
 #services #services-cont #col-left {
   display: inline-block;
   width: 44.5%;
-  margin: 0 2.5%;
   vertical-align: top;
 
   @media @phone {
@@ -474,9 +497,11 @@ p {
 
   @media @phone {
     width: 100%;
+    padding: 20px 3%;
+    box-sizing: border-box;
 
     p, ul > li {
-      font-size: 36px;
+      font-size: 22px;
     }
   }
 }
@@ -490,7 +515,7 @@ p {
   text-transform: uppercase;
 
   @media @phone {
-    font-size: 44px;
+    font-size: 26px;
   }
 }
 
@@ -641,6 +666,10 @@ p {
   background-color: #dbe245;
   margin-bottom: 25px;
   margin-top: 0;
+
+  @media @phone {
+    font-size: 22px;
+  }
 }
 
 #contact-social {
@@ -674,9 +703,18 @@ p {
 
   > div:first-child {
     margin-right: 1%;
+
+    @media @phone {
+      margin-right: 0;
+    }
   }
   > div:nth-child(2) {
     margin-left: 1%;
+
+    @media @phone {
+      margin-left: 0;
+      margin-top: 25px;
+    }
   }
 }
 
@@ -688,15 +726,25 @@ p {
   font-size: 22px;
   font-weight: bold;
   height: 40px;
-  width: 48.6%;
+  width: 48.5%;
   display: inline-block;
   vertical-align: top;
+  position: relative;
+
+  @media @phone {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 #contact-info-cont .pink-box a {
   color: #fff;
-  margin-top: 10px;
   display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 #contact-info-cont .pink-box a:hover, #services .headline a:hover {
@@ -704,8 +752,17 @@ p {
 }
 
 #contact-info-cont .phone-cont {
-  margin-right: 20px;
   font-size: 36px;
+
+  @media @tablet {
+    font-size: 26px;
+  }
+}
+
+#contact-info-cont .email-cont {
+  @media @tablet {
+    font-size: 18px;
+  }
 }
 
 #form-cont {
@@ -717,8 +774,15 @@ p {
 
 #form-cont .input-cont {
   color: #fff;
-  width: 31.6%;
+  width: 31.4%;
   display: inline-block;
+
+  @media @phone {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
 }
 
 #form-cont .wrapper {
@@ -814,6 +878,10 @@ span.wpcf7-form-control .wpcf7-checkbox {
 #form-cont .submit-btn {
   margin-top: 20px;
   text-align: right;
+
+  @media @phone {
+    text-align: center;
+  }
 }
 
 #form-cont input[type="submit"] {

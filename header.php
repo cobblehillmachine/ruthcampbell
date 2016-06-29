@@ -92,8 +92,8 @@
 <body <?php body_class(); ?> id="<?php echo  strtolower(str_replace(' ','-',get_the_title())); ?>">
 
 		<div id="header">
-      <div class="mobile-toggle">&#x2261;</div>
 			<div class="mid-cont">
+        <div class="mobile-toggle">&#x2261;</div>
 				<div id="logo">
           <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo"></a>
         </div>
